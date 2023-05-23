@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".flow_vs_livedata.FlowVsLiveDataActivity">
+
+   <Button
+       android:id="@+id/liveDataBtn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Live data"/>
+
+    <Button
+        android:id="@+id/stateFlowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State Flow"/>
+
+    <Button
+        android:id="@+id/sharedFlowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shared Flow"/>
+
+    <Button
+        android:id="@+id/collectBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Collect vs CollectLatest"/>
+
+    <Button
+        android:id="@+id/shareLazilyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shareIn Lazily"/>
+
+    <Button
+        android:id="@+id/shareEagerlyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shareIn Eagerly"/>
+</LinearLayout>

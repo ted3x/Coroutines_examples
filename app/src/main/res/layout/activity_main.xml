@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/tryEmitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tryEmit"/>
+
+    <Button
+        android:id="@+id/flowsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flows"/>
+
+    <Button
+        android:id="@+id/scopeContextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scope And Context"/>
+
+
+    <Button
+        android:id="@+id/flowVsLiveDataBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flow Vs LiveData"/>
+
+    <Button
+        android:id="@+id/mutexBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mutex"/>
+
+    <Button
+        android:id="@+id/jobsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jobs and Cancellation"/>
+
+</LinearLayout>

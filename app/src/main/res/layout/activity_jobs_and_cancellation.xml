@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".jobs_and_cancellation.JobsAndCancellationActivity">
+
+    <Button
+        android:id="@+id/nonCooperativeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Non Cooperative Coroutine"
+        app:layout_constraintBottom_toTopOf="@+id/cooperativeYieldBtn" />
+
+    <Button
+        android:id="@+id/cooperativeYieldBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cooperative Coroutine With Yield"
+        app:layout_constraintBottom_toTopOf="@+id/cooperativeBtn" />
+
+    <Button
+        android:id="@+id/cooperativeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cooperative Coroutine With Delay"
+        app:layout_constraintBottom_toTopOf="@+id/cooperativeIsActiveBtn" />
+
+    <Button
+        android:id="@+id/cooperativeIsActiveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cooperative Coroutine With isActive"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/parentCancelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parent job cancellation"
+        app:layout_constraintBottom_toTopOf="@+id/nonCooperativeBtn" />
+
+
+    <Button
+        android:id="@+id/childWithDiffJobBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parent job cancellation(child different job)"
+        app:layout_constraintBottom_toTopOf="@+id/nonCooperativeBtn" />
+
+    <Button
+        android:id="@+id/cancelBlockBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NonCancellable "
+        app:layout_constraintBottom_toTopOf="@+id/nonCooperativeBtn" />
+
+    <Button
+        android:id="@+id/withTimeoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WithTimeout"
+        app:layout_constraintBottom_toTopOf="@+id/nonCooperativeBtn" />
+
+
+    <Button
+        android:id="@+id/exceptionChildBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exception handling in child"
+        app:layout_constraintBottom_toTopOf="@+id/nonCooperativeBtn" />
+
+    <Button
+        android:id="@+id/exceptionParentBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exception handling in parent"
+        app:layout_constraintBottom_toTopOf="@+id/nonCooperativeBtn" />
+
+
+    <Button
+        android:id="@+id/supervisorBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Supervisor Job"
+        app:layout_constraintBottom_toTopOf="@+id/nonCooperativeBtn" />
+
+</LinearLayout>

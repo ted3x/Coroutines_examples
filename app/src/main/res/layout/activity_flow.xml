@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".flow.FlowActivity">
+
+    <Button
+        android:id="@+id/collectLatestBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Collect latest"/>
+
+    <Button
+        android:id="@+id/conflateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conflate"/>
+
+    <Button
+        android:id="@+id/collectBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Collect"/>
+
+    <Button
+        android:id="@+id/bufferingBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buffering"/>
+
+    <Button
+        android:id="@+id/distinctBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distinct until changed"/>
+
+    <Button
+        android:id="@+id/cancelingBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelling"/>
+
+    <Button
+        android:id="@+id/exampleBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Example"/>
+
+</LinearLayout>
